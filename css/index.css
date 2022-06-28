@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Elements */
+h1, p, a, td, label, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+div, h1 {
+    margin: 12px;
+}
+
+h1 {
+    font-size: 24px;
+}

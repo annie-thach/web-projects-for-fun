@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bingo Board Generator</title>
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+        <link rel="stylesheet" href="../css/bingo.css">
+        <script type="text/javascript" src="../js/bingo-board.js"></script>
+    </head>
+    <body>
+        <h1>Bingo Board Generator</h1>
+        <div>
+            <p>
+                Put a list of at least 9, 16, or 25 (comma) separated items into the text area below, then click the "Generate Board" button to generate a board.
+            </p>
+            <br>
+            <p>
+                Be careful when clicking on "Generate Board" or "Remove Board" - these boards are randomly generated and there is no way to recover them once they have been overwritten!
+            </p>
+        </div>
+        <div>
+            <form>
+                <label for="delim-input">List separator</label>
+                <input type="text" id="delim-input" value=","> ✦ ✦ ✦ 
+                <label for="dim-input">Board dimension</label>
+                <select name="dim-input" id="dim-input">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <textarea id="board-space-input" placeholder="Board space text list goes here." rows="8" cols="64"></textarea>
+                <br>
+                <button type="button" onclick="generateBoard()">Generate Board</button> ✦ ✦ ✦
+                <button type="button" onclick="clearMarks()">Clear Marks</button> ✦ ✦ ✦
+                <button type="button" onclick="removeBoard()">Remove Board</button>
+            </form>
+        </div>
+        <div id="board-area">
+            <table id="board"></table>
+        </div>
+        <div>
+            <p>
+                Created & last updated June 27, 2022.
+            </p>
+            <br>
+            <p>
+                <a href="../index.html">Home</a>
+            </p>
+        </div>
+    </body>
+</html>
