@@ -8,3 +8,6 @@ Primarily any HTML, CSS, JavaScript projects I can come up with for fun.
 ## Changelog
 - Monday, June 27, 2020
     - Created repo to upload project files.
+
+## Contributors
+- Annie Thach
