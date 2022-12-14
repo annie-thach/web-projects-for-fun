@@ -1,0 +1,105 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding: 8px;
+}
+
+h1 {
+	background:rgb(187 187 170 / 0.2);
+	border-radius: 8px;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 12px 8px 0 8px;
+	padding: 12px;
+}
+
+h2 {
+	font-size: 16px;
+	letter-spacing: 1px;
+	/* top right bottom left */
+	margin: 8px 8px 0 8px;
+}
+
+h3 {
+	font-size: 14px;
+	letter-spacing: 1px;
+	/* top right bottom left */
+	margin: 0 8px 8px 8px;
+}
+
+hr {
+	border: 1px dotted rgb(0 0 0 / 0.2);
+	/* top right bottom left */
+	margin: 4px 0 4px 0;
+}
+
+.selected-type {
+	background: #bbbbaa;
+	border-color: rgb(255 255 255 / 0.75);
+	border-radius: 16px;
+	border-style: solid;
+	border-width: 2px;
+	/* x-offset y-offset blur-radius color(r g b opacity) */
+	box-shadow: 0 0 2px 2px rgb(0 0 0 / 0.2);
+	color: rgb(255 255 255 / 1);
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 4px;
+	padding: 6px;
+	text-align: center;
+	/* color(r g b opacity) x-offset y-offset blur-radius*/
+	text-shadow: rgb(0 0 0 / 0.8) 0 0 4px;
+	width: 100px;
+}
+
+div.mono-offense, div.mono-defense {
+	display: inline-block;
+	vertical-align: top;
+	height: 360px;
+	width: 440px;
+}
+
+div.output {
+	margin: 4px;
+}
+
+div.mono-offense, div.mono-defense, #dual-type-defense {
+	background: rgb(187 187 170 / 0.2);
+	border-radius: 8px;
+	margin: 8px;
+	padding: 12px;
+}
+
+#output-area {
+	/* top right bottom left */
+	margin: 0 8px 8px 8px;
+}
+
+#type-selection {
+	/* top right bottom left */
+	margin: 8px 8px 0 8px;
+}
+
+#type1-offense1, #type1-offense2, #type1-offense3, #type2-offense1, #type2-offense2, #type2-offense3, 
+#type1-defense1, #type1-defense2, #type1-defense3, #type2-defense1, #type2-defense2, #type2-defense3, 
+#dual-type-defense1, #dual-type-defense2, #dual-type-defense3 {
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.footer p, .footer a {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footer p {
+	margin-left: 12px;
+}

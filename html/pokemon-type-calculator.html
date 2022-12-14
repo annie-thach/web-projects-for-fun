@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pokémon Type Matchup Calculator</title>
+		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+		<link rel="stylesheet" href="../css/pokemon-type-calculator.css">
+		<script type="text/javascript" src="../js/type-data.js"></script>
+	</head>
+
+	<body>
+		<h1>Pokémon Type Matchup Calculator</h1>
+		<div id="type-selection">
+			<select class="selected-type" id="type1" onchange="select_type(this)"></select>
+			<select class="selected-type" id="type2" onchange="select_type(this)"></select>
+		</div>
+
+		<div id="output-area">
+			<div id="mono-output-area">
+				<h2>Offensive Matchups</h2>
+				<div class="mono-offense" id="type1-offense">
+					<h3>Type 1</h3>
+					<div class="output">
+						<div id="type1-offense1"></div>
+						<hr>
+						<div id="type1-offense2"></div>
+						<hr>
+						<div id="type1-offense3"></div>
+					</div>
+				</div>
+				<div class="mono-offense" id="type2-offense">
+					<h3>Type 2</h3>
+					<div class="output">
+						<div class="test" id="type2-offense1"></div>
+						<hr>
+						<div id="type2-offense2"></div>
+						<hr>
+						<div id="type2-offense3"></div>
+					</div>
+				</div>
+				<hr>
+				<h2>Defensive Matchups</h2>
+				<div class="mono-defense" id="type1-defense">
+					<h3>Type 1</h3>
+					<div class="output">
+						<div id="type1-defense1"></div>
+						<hr>
+						<div id="type1-defense2"></div>
+						<hr>
+						<div id="type1-defense3"></div>
+					</div>
+				</div>
+				<div class="mono-defense" id="type2-defense">
+					<h3>Type 2</h3>
+					<div class="output">
+						<div id="type2-defense1"></div>
+						<hr>
+						<div id="type2-defense2"></div>
+						<hr>
+						<div id="type2-defense3"></div>
+					</div>
+				</div>
+			</div>
+			<div id="dual-output-area">
+				<hr>
+				<h2>Dual-Type Defensive Matchups</h2>
+				<div id="dual-type-defense">
+					<div class="output">
+						<div id="dual-type-defense1"></div>
+						<hr>
+						<div id="dual-type-defense2"></div>
+						<hr>
+						<div id="dual-type-defense3"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="footer">
+            <p>
+                Created & last updated December 13, 2022.
+            </p>
+            <br>
+            <p>
+                <a href="../index.html">Home</a>
+            </p>
+        </div>
+		<script type="text/javascript" src="../js/type-select.js"></script>
+	</body>
+</html>
